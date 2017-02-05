@@ -54,3 +54,17 @@ Route::get('notes/{id_note}/{slug?}', function( $id_note, $slug = null){
 
 
 Route::get('/test', 'TestController@index');
+
+//Para rutas genéricas de controladores
+//ejemplotodo lo que tenga que ver con users coge UsersController
+//y ya luego busca si hay petición a metódo user/create lo busca dentro del controlador
+/*
+ *
+ * Esto es de la versión 5.2 de Laravel, y en este proyecto con 5.3 peta
+Route::controllers([
+
+    'users' => 'UsersController',
+
+
+]);
+*/
